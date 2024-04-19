@@ -1,5 +1,5 @@
 import 'package:latihanuts/screen_page/page_bottom_navigation.dart';
-import 'package:latihanuts/screen_page/page_list_users.dart';
+
 import 'package:latihanuts/screen_page/page_search_list.dart';
 import 'package:latihanuts/screen_page/page_list_berita.dart';
 import 'package:flutter/material.dart';
@@ -145,33 +145,8 @@ class PageBeranda extends StatelessWidget {
                   color: Colors.green,
                   textColor: Colors.white,
                 ),
-                SizedBox(
-                  height: 5,
-                ),
-                MaterialButton(
-                  onPressed: () {
-                    //tambahkan code toast
-                    showToast(
-                      'Page Search list',
-                      context: context,
-                      axis: Axis.horizontal,
-                      alignment: Alignment.center,
-                      position: StyledToastPosition.bottom,
-                      toastHorizontalMargin: 28,
-                      fullWidth: true,
-                    );
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => PageListUsers()));
-                  },
-                  child: Text(
-                    'Search list',
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
-                  ),
-                  color: Colors.green,
-                  textColor: Colors.white,
-                ),
+
+
                 SizedBox(
                   height: 5,
                 ),
